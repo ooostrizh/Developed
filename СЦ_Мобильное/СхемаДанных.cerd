@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<diagram>
+	<tab name="СЦ_Мобильное" projectName="СЦ_Мобильное;">
+		<entities>
+			<entity x="339" y="43" width="200" height="74" eClass="InformationRegister" uri="bm://СЦ_Мобильное/InformationRegister.ЛогОшибокОбменаДанными#/">
+			</entity>
+			<entity x="627" y="43" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.СерверыДанных#/">
+			</entity>
+			<entity x="707" y="257" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.Отправления#/">
+			</entity>
+			<entity x="957" y="476" width="200" height="199" eClass="Document" uri="bm://СЦ_Мобильное/Document.ПриемДанныхСоСканера#/">
+			</entity>
+			<entity x="1219" y="96" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.СлужбыДоставки#/">
+			</entity>
+			<entity x="973" y="101" width="200" height="71" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.ИнтернетМагазины#/">
+			</entity>
+			<entity x="1456" y="94" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.СкладыВозврата#/">
+			</entity>
+			<entity x="386" y="255" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.СтатусыОтправлений#/">
+			</entity>
+			<entity x="-50" y="133" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.Пользователи#/">
+			</entity>
+			<entity x="10" y="648" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.СтатусыЗагрузкиДанныхВОсновноеПриложение#/">
+			</entity>
+			<entity x="-60" y="19" width="200" height="55" eClass="Catalog" uri="bm://СЦ_Мобильное/Catalog.СортировочныеЦентры#/">
+			</entity>
+			<entity x="627" y="-91" width="200" height="36" eClass="Constant" uri="bm://СЦ_Мобильное/Constant.СерверОбмена#/">
+			</entity>
+		</entities>
+		<relations for="main">
+			<relation source="РегистрСведений.ЛогОшибокОбменаДанными" target="Справочник.СерверыДанных">
+				<pathPoint x="539" y="70"></pathPoint>
+				<pathPoint x="627" y="70"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриемДанныхСоСканера" target="Справочник.Отправления">
+				<pathPoint x="957" y="575"></pathPoint>
+				<pathPoint x="807" y="312"></pathPoint>
+			</relation>
+			<relation source="Справочник.Отправления" target="Справочник.СлужбыДоставки">
+				<pathPoint x="907" y="284"></pathPoint>
+				<pathPoint x="1304" y="151"></pathPoint>
+			</relation>
+			<relation source="Справочник.Отправления" target="Справочник.ИнтернетМагазины">
+				<pathPoint x="907" y="284"></pathPoint>
+				<pathPoint x="1058" y="172"></pathPoint>
+			</relation>
+			<relation source="Справочник.Отправления" target="Справочник.СкладыВозврата">
+				<pathPoint x="907" y="284"></pathPoint>
+				<pathPoint x="1541" y="149"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриемДанныхСоСканера" target="Справочник.СлужбыДоставки">
+				<pathPoint x="1157" y="575"></pathPoint>
+				<pathPoint x="1319" y="151"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриемДанныхСоСканера" target="Справочник.ИнтернетМагазины">
+				<pathPoint x="1073" y="476"></pathPoint>
+				<pathPoint x="1073" y="172"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриемДанныхСоСканера" target="Справочник.СкладыВозврата">
+				<pathPoint x="1157" y="575"></pathPoint>
+				<pathPoint x="1556" y="149"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриемДанныхСоСканера" target="Справочник.СтатусыОтправлений">
+				<pathPoint x="957" y="575"></pathPoint>
+				<pathPoint x="486" y="310"></pathPoint>
+			</relation>
+			<relation source="Документ.ПриемДанныхСоСканера" target="Справочник.СтатусыЗагрузкиДанныхВОсновноеПриложение">
+				<pathPoint x="957" y="675"></pathPoint>
+				<pathPoint x="210" y="675"></pathPoint>
+			</relation>
+			<relation source="Константа.СерверОбмена" target="Справочник.СерверыДанных">
+				<pathPoint x="727" y="-55"></pathPoint>
+				<pathPoint x="727" y="43"></pathPoint>
+			</relation>
+		</relations>
+	</tab>
+</diagram>
