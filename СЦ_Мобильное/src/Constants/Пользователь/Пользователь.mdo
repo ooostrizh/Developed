@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d4fd0d0-c89e-4103-9888-8b001ff60cf5">
+  <producedTypes>
+    <managerType typeId="46abfe8f-3351-4ac5-8774-500ae4c2992a" valueTypeId="fed7f4b7-c83c-4826-8fd2-506bff0bd958"/>
+    <valueManagerType typeId="85ff6a97-ebf0-4512-a5d4-e81b9c337d59" valueTypeId="b7dae037-8539-4ec5-b8b6-cf0467ba223f"/>
+  </producedTypes>
+  <name>Пользователь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователь</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

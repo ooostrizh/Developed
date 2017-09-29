@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9c519a9-0992-4b9d-a6c4-434b4cfd196d">
+  <producedTypes>
+    <managerType typeId="ead7422c-2ca6-446c-8f3a-3c68b97382f0" valueTypeId="5b4e9227-75f1-42f3-884e-4b46e139f9d6"/>
+    <valueManagerType typeId="615321c3-a4b8-45b7-b746-1ab180345ea0" valueTypeId="3c1ed52c-af2d-4ca8-8d35-ee5ac7e27cd0"/>
+  </producedTypes>
+  <name>СерверОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервер обмена</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.СерверыДанных</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56874597-d7f1-4401-8c28-d503916c8797">
+  <producedTypes>
+    <refType typeId="648beddd-76c2-4b18-b86a-7bfecfea9eff" valueTypeId="a82d2933-aa1c-4ed6-a6fe-64684a28913c"/>
+    <listType typeId="1e5162c7-8ed1-4f95-839f-9e990741f018" valueTypeId="c20647fc-5003-44a2-b5c3-0e39afbde227"/>
+    <managerType typeId="42cb5bd7-0612-4147-aa63-27fc343be8bd" valueTypeId="78b48cd0-c227-433d-9aa1-ea9cb5da6def"/>
+  </producedTypes>
+  <name>ВариантыСчитыванияШтрихкода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты считывания штрихкода</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f5bb10ba-92ee-4d05-91e5-abe5fc0629ed">
+    <name>ПоНомеруЯндекса</name>
+    <synonym>
+      <key>ru</key>
+      <value>По номеру яндекса</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fb6cb0ec-f456-43a3-bc5c-ae0129327ada">
+    <name>ПоНомеруСД</name>
+    <synonym>
+      <key>ru</key>
+      <value>По номеру СД</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

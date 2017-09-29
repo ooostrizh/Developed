@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="469f2d60-192e-4b8e-a4ac-fa39ab773c58">
+  <producedTypes>
+    <managerType typeId="fe368239-2a50-47da-afb4-9b99ccd78dc3" valueTypeId="4f5a0b1a-9e92-4d0c-9984-332e1e1fd6da"/>
+    <valueManagerType typeId="c1e9a623-00a5-4393-9ce2-a7c0ff6bee48" valueTypeId="99b1c860-f0ec-4afb-84f6-ddbb4a0c0d77"/>
+  </producedTypes>
+  <name>ТипПодписчика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип подписчика</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>EnumRef.ТипыПодписчиковУведомлений</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

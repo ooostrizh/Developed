@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2cbc8b73-babf-47fa-970a-bb012dfd0aed">
+  <producedTypes>
+    <objectType typeId="8158c5a7-08c8-4591-9606-a7128a4fc885" valueTypeId="0273e41c-052e-4c63-bd51-06d6bdb2ba74"/>
+    <refType typeId="7a1ef16c-a405-4a74-9095-2abb25361e40" valueTypeId="70590a93-8f63-4d07-92f6-791b5185aa2c"/>
+    <selectionType typeId="d79231e8-e068-49e6-a1d2-6c5db930077f" valueTypeId="b7986240-2fe0-4b06-8dcd-d3516e5bfc29"/>
+    <listType typeId="f4248ff0-9084-4f8f-af28-94d815ce3f08" valueTypeId="b98ebfc1-a891-4c12-8018-1637d80b2e30"/>
+    <managerType typeId="bb5ecfde-7a0e-46ad-a80d-4a8370cc2ff8" valueTypeId="60a267fc-6a58-47c3-8016-519e65936ec9"/>
+  </producedTypes>
+  <name>Отправления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправления</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.Отправления.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>50</codeLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.Отправления.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Отправления.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="55c97e53-5783-4302-880f-cb3a35100d40">
+    <name>СлужбаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служба доставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СлужбыДоставки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="99a30e50-05cd-4e98-8ec3-b54f6aa2334b">
+    <name>ИнтернетМагазин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интернет магазин</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИнтернетМагазины</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="17e6a8a4-ab29-45df-b9b8-642859a91431">
+    <name>СкладВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад возврата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СкладыВозврата</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="17bcbae6-4ae6-4e7c-b9dc-8022d72375e2">
+    <name>НомерСД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер СД</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3b684aad-5ac9-4bf8-aa5c-a6d1c9687b99">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a1fe423e-757b-43de-8e3f-68342667bc44">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="35c5318d-c51e-4653-ab7c-758da3dec201">
+    <name>НомерСЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер СЦ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="12785b9c-2cff-4d8b-9a60-3b322b89c430">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="85d602f4-289a-4acb-bcf6-108677373b54">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

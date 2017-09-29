@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca2aead2-0590-4788-8427-c0f99f7a4e93">
+  <producedTypes>
+    <managerType typeId="62c4f08f-cba0-4a90-83d4-1e29c935bac4" valueTypeId="6e04e2ed-8d68-47d4-b401-ee724a3e63f0"/>
+    <valueManagerType typeId="caaaae3d-29f9-464a-a64d-d4e505510645" valueTypeId="f897ce86-a21c-42fc-9127-b852000c66e5"/>
+  </producedTypes>
+  <name>ИдентификаторМобильногоУстройства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификатор мобильного устройства</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

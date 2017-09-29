@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b60ba608-405a-46be-980f-d5c1fe0a2870">
+  <producedTypes>
+    <refType typeId="41d62c04-4180-4304-9ebe-7168cae6092d" valueTypeId="b41acfa7-d0ec-49d3-9ca6-ac21d44022bb"/>
+    <listType typeId="39a7f790-2221-4bb7-957d-afbdf446082d" valueTypeId="0fbe78cf-01aa-4e9c-9e68-10399ad4117d"/>
+    <managerType typeId="df22371e-aa05-4b0b-9912-635dd65bda38" valueTypeId="a763ffdc-567d-4277-b477-9a948cda9490"/>
+  </producedTypes>
+  <name>ТипСбораДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип сбора данных</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6cfed618-5bb8-4b67-9c5e-c3c3a9ee937d">
+    <name>ПриходЗаказовОтИнтернетМагазина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход заказов от интернет магазина</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="69bb17e8-11eb-4233-ab47-42ac6176fc3a">
+    <name>ОтгрузкаЗаказовВТранспортнуюКомпанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгрузка заказов в транспортную компанию</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7295eccc-746e-4a45-8d42-f311daec0b05">
+    <name>ПриходВозвратныхЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход возвратных заказов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0a942a1c-1e76-4076-919c-45b38d330b0a">
+    <name>ОтгрузкаЗаказовВИнтернетМагазин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгрузка заказов в интернет магазин</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

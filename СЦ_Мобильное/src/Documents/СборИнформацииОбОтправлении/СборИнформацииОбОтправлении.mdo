@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="875d95b6-355f-4974-a764-d6ab8c3b6afd">
+  <producedTypes>
+    <objectType typeId="948ceec1-a1c3-4b0d-9379-c02abca7c859" valueTypeId="3eb900b7-9268-4660-abfd-a2c26a1fa744"/>
+    <refType typeId="89c71538-ee06-463f-9a47-72f2bc6cd7fd" valueTypeId="96d30454-3bda-401d-b66f-ee3373dad328"/>
+    <selectionType typeId="56d5939f-e908-4bd6-9ee7-b76f7536cfcf" valueTypeId="f3749630-0fd2-4d13-ace6-a5e22e7f31b4"/>
+    <listType typeId="daaa3ec7-159a-4a41-b16b-c728a9598c57" valueTypeId="f7f03d92-08c1-4ca5-bd48-4694dd40e147"/>
+    <managerType typeId="922c0628-dc86-4a62-90ae-7872e676548e" valueTypeId="61bb9c54-c8ec-431d-b85b-e8efc4654726"/>
+  </producedTypes>
+  <name>СборИнформацииОбОтправлении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сбор информации об отправлении</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СборИнформацииОбОтправлении.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СборИнформацииОбОтправлении.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.СборИнформацииОбОтправлении.Form.ФормаСписка</defaultListForm>
+  <posting>Deny</posting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="4a9304f2-e3dd-4fc6-8d51-abd46bd8f698">
+    <name>КоличествоЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество заказов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="1280c3fd-e74b-46b8-b283-67981f4c2048">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26f3666e-1968-4f95-a7f0-f87ad2810dfb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e05dc30f-62a3-4da3-92cc-77343266dee6">
+    <producedTypes>
+      <objectType typeId="62fb9e85-8a13-40b9-9e3b-4fb82d730351" valueTypeId="eb67d7f5-2af3-4d47-a3fd-380d010ce4e3"/>
+      <rowType typeId="192d7853-bd65-4d65-abd1-ac8bfce7f71c" valueTypeId="8219753c-6c7c-4a16-aa34-3b5884b39abc"/>
+    </producedTypes>
+    <name>Отправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправления</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="b58ce4c7-35a9-437f-b328-9108cc635af1">
+      <name>Отправление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отправление</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Отправления</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4acb776c-cf8e-4921-855f-0fbd3c827c74">
+      <name>СтатусОтправления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус отправления</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.СтатусыОтправлений</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dc877588-df90-4276-abff-0a835c47e39f">
+      <name>ДатаУстановкиСтатуса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата установки статуса</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6fa3aa29-cd2f-4b63-b590-e8497d496481">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

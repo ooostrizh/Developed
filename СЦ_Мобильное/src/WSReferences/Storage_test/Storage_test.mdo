@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f54d63d-75df-4fb2-9fec-f4a5ec93a5c7">
+  <producedTypes>
+    <managerType typeId="6b03a48f-82cc-4a10-9a03-00462d811964" valueTypeId="5fcbaaeb-022c-4d86-8444-47611df9e9f8"/>
+  </producedTypes>
+  <name>Storage_test</name>
+  <synonym>
+    <key>ru</key>
+    <value>Storage test</value>
+  </synonym>
+  <comment></comment>
+  <locationURL>http://192.168.5.134/yasc/ws/Storage.1cws?wsdl</locationURL>
+</mdclass:WSReference>

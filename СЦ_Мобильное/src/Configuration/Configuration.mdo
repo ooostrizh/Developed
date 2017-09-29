@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11eb7289-5c4d-4148-ab32-50fda95bc234">
+  <name>SortCentrMobile</name>
+  <synonym>
+    <key>ru</key>
+    <value>Sort Centr Mobile</value>
+  </synonym>
+  <comment></comment>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f989bd3f-4cc3-46c9-ad95-34ba378f9430"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="2ca5a06a-fcac-457b-8dc2-0fffc78f59f2"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="fc32258a-81f8-41bb-a306-8839d96975b9"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="063fd41d-e60b-4821-8bfa-48a5662cbd1b"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="a340b82d-9de7-4a00-8e28-ad05551f9236"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="10aa52e3-8b3b-4403-ade0-73838a21133f"/>
+  <namePrefix></namePrefix>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>MobileDevice</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor></vendor>
+  <version></version>
+  <updateCatalogAddress></updateCatalogAddress>
+  <requiredMobileApplicationPermissions>Multimedia</requiredMobileApplicationPermissions>
+  <requiredMobileApplicationPermissions>Location</requiredMobileApplicationPermissions>
+  <requiredMobileApplicationPermissions>Telephony</requiredMobileApplicationPermissions>
+  <requiredMobileApplicationPermissions>PushNotification</requiredMobileApplicationPermissions>
+  <requiredMobileApplicationPermissions>LocalNotification</requiredMobileApplicationPermissions>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <synchronousExtensionAndAddInCallUseMode>DontUse</synchronousExtensionAndAddInCallUseMode>
+  <interfaceCompatibilityMode>Version8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.10</compatibilityMode>
+  <languages uuid="202e60eb-d813-4950-8189-a9cbaffb794d">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <comment></comment>
+    <languageCode>ru</languageCode>
+  </languages>
+  <commonPictures>CommonPicture.НовыйПоШтрихкоду</commonPictures>
+  <commonPictures>CommonPicture.ШтрихКод</commonPictures>
+  <sessionParameters>SessionParameter.ВыполняетсяОбмен</sessionParameters>
+  <roles>Role.Администратор</roles>
+  <commonModules>CommonModule.РаботаСТорговымОборудованием</commonModules>
+  <commonModules>CommonModule.ОбменДаннымиССервисом</commonModules>
+  <commonModules>CommonModule.ОбработчикФоновыхЗаданий</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.МодульСервис</commonModules>
+  <exchangePlans>ExchangePlan.ИзмененныеОбъекты</exchangePlans>
+  <wsReferences>WSReference.Storage_test</wsReferences>
+  <wsReferences>WSReference.Storage</wsReferences>
+  <commonCommands>CommonCommand.ВыполнитьОбмен</commonCommands>
+  <constants>Constant.ВариантСчитыванияШтрихкода</constants>
+  <constants>Constant.УчитыватьКоличествоМест</constants>
+  <constants>Constant.ИдентификаторМобильногоУстройства</constants>
+  <constants>Constant.Пользователь</constants>
+  <constants>Constant.УзелПланаОбмена</constants>
+  <constants>Constant.ИнтервалАвтоматическогоОбменаДанными</constants>
+  <constants>Constant.ПарольАдминистратора</constants>
+  <constants>Constant.ЗаголовокСистемы</constants>
+  <constants>Constant.ТестоваяСреда</constants>
+  <constants>Constant.ЗагружатьДокументыВЦББезПроверки</constants>
+  <constants>Constant.ИдентификаторИнформационнойБазы</constants>
+  <constants>Constant.ИдентификаторПриложения</constants>
+  <constants>Constant.ИдентификаторУстройства</constants>
+  <constants>Constant.ТипПодписчика</constants>
+  <constants>Constant.РежимПолученияОжидаемыхЗаказов</constants>
+  <constants>Constant.СерверОбмена</constants>
+  <commonForms>CommonForm.Настройки</commonForms>
+  <commonForms>CommonForm.ФормаАвторизации</commonForms>
+  <catalogs>Catalog.Отправления</catalogs>
+  <catalogs>Catalog.СлужбыДоставки</catalogs>
+  <catalogs>Catalog.ИнтернетМагазины</catalogs>
+  <catalogs>Catalog.СкладыВозврата</catalogs>
+  <catalogs>Catalog.СтатусыОтправлений</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.СтатусыЗагрузкиДанныхВОсновноеПриложение</catalogs>
+  <catalogs>Catalog.СерверыДанных</catalogs>
+  <catalogs>Catalog.СортировочныеЦентры</catalogs>
+  <documents>Document.ПриемДанныхСоСканера</documents>
+  <documents>Document.СборИнформацииОбОтправлении</documents>
+  <enums>Enum.ТипСбораДанных</enums>
+  <enums>Enum.ВариантыСчитыванияШтрихкода</enums>
+  <enums>Enum.РежимыОбменаДанными</enums>
+  <enums>Enum.ТипыПодписчиковУведомлений</enums>
+  <enums>Enum.РежимПолученияОжидаемыхЗаказов</enums>
+  <dataProcessors>DataProcessor.УдалениеЛишнихМагазинов</dataProcessors>
+  <informationRegisters>InformationRegister.ЛогОшибокОбменаДанными</informationRegisters>
+</mdclass:Configuration>

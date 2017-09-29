@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aea8c6d5-0cec-4359-8c5b-5cf15cd9e285">
+  <producedTypes>
+    <managerType typeId="098e611d-8dc2-477c-a849-623fc1575aac" valueTypeId="3a86ad1a-fc73-4cef-bac7-ca74dc0a6621"/>
+    <valueManagerType typeId="c7437f3f-e9e4-4bde-823b-346cde7a93eb" valueTypeId="17dc3b83-3e38-40f1-ba43-5d913710a988"/>
+  </producedTypes>
+  <name>ЗагружатьДокументыВЦББезПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загружать документы в ЦБ без проверки</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

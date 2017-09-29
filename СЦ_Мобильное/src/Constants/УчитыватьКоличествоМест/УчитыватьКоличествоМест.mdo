@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13af0bfb-49ed-4192-9456-19bac35357e6">
+  <producedTypes>
+    <managerType typeId="3bc52c85-0254-4b9f-8bda-f95cab912944" valueTypeId="11874e5d-24dd-4471-8ecb-98ca9d613edd"/>
+    <valueManagerType typeId="fbdd5c36-ae21-419d-8654-8b567e891df8" valueTypeId="55d01504-9ff2-4bed-b6e7-5a8f7a69d7ba"/>
+  </producedTypes>
+  <name>УчитыватьКоличествоМест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учитывать количество мест</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

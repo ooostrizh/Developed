@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e065157e-8d10-4b70-b781-221d1e49d2ea">
+  <producedTypes>
+    <objectType typeId="b1482f75-8bc2-4235-b9cf-490daa74d51f" valueTypeId="3dd53de7-f3bd-4dd3-b73c-494b730fd86f"/>
+    <refType typeId="04246c23-2360-473d-827a-912632c3a3df" valueTypeId="5c42d925-d22e-4858-b336-a7adfe4ba04a"/>
+    <selectionType typeId="e5e5df79-b0a5-4c7c-bc26-6d245fdf5f0f" valueTypeId="a67b7de2-b54e-4f91-a804-45a53bdf8a6e"/>
+    <listType typeId="b0f51a2f-7f72-408f-a342-5ffece6ea1a7" valueTypeId="e0483ad4-ea07-4cb2-84d2-2091a2eb1547"/>
+    <managerType typeId="2b2a9559-94e8-4481-b12c-d3647866af2e" valueTypeId="ac4019ad-1b29-4486-a068-8f4c956c394c"/>
+  </producedTypes>
+  <name>СтатусыОтправлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы отправлений</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.СтатусыОтправлений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатусыОтправлений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>4</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="10ef5d27-e46a-46bc-adf0-5d36a17838ec">
+      <name>ВозвратныйЗаказВрученИМ</name>
+      <description>Возвратный заказ вручен ИМ</description>
+      <code xsi:type="core:NumberValue">
+        <value>180</value>
+      </code>
+    </items>
+    <items id="e9b2a28d-68a4-4050-8eab-bffb0f6f72fb">
+      <name>ВозвратныйЗаказГотовДляПередачиИМ</name>
+      <description>Возвратный заказ готов для передачи ИМ</description>
+      <code xsi:type="core:NumberValue">
+        <value>175</value>
+      </code>
+    </items>
+    <items id="bd293a2b-fe2a-4e91-889e-ad3e7dd29180">
+      <name>ВозвратныйЗаказНаСкладеСЦ</name>
+      <description>Возвратный заказ на складе СЦ</description>
+      <code xsi:type="core:NumberValue">
+        <value>170</value>
+      </code>
+    </items>
+    <items id="ebf0da84-df1e-425f-b925-008cfba62ebf">
+      <name>ВозвратныйЗаказПереданНаДоставкуВИМ</name>
+      <description>Возвратный заказ передан на доставку в ИМ</description>
+      <code xsi:type="core:NumberValue">
+        <value>177</value>
+      </code>
+    </items>
+    <items id="f680edd9-c9ca-4e69-9923-f99840c7e4a2">
+      <name>ЗаказНаСкладеСЦПодготовленКОтправкеВСД</name>
+      <description>Заказ на складе СЦ подготовлен к отправке в СД</description>
+      <code xsi:type="core:NumberValue">
+        <value>120</value>
+      </code>
+    </items>
+    <items id="ebc99d7a-b82d-425b-be94-fc2325d01dfc">
+      <name>ЗаказНеНайден</name>
+      <description>Заказ не найден</description>
+      <code xsi:type="core:NumberValue">
+        <value>404</value>
+      </code>
+    </items>
+    <items id="30d02a64-72ae-4fa8-a31e-d926340fdb1d">
+      <name>ЗаказОтгруженВСД</name>
+      <description>Заказ отгружен в СД</description>
+      <code xsi:type="core:NumberValue">
+        <value>130</value>
+      </code>
+    </items>
+    <items id="dbca21e7-31a2-4ac2-9e81-09c101902d0c">
+      <name>ЗаказОтмененЗаказчиком</name>
+      <description>Заказ отменен заказчиком</description>
+      <code xsi:type="core:NumberValue">
+        <value>410</value>
+      </code>
+    </items>
+    <items id="677da2c5-bf4f-4a7f-b244-767ce9025b5f">
+      <name>ЗаказПоступилНаСкладСЦ</name>
+      <description>Заказ поступил на склад СЦ</description>
+      <code xsi:type="core:NumberValue">
+        <value>110</value>
+      </code>
+    </items>
+    <items id="7801fd21-69a5-4921-98df-d555b0508f43">
+      <name>ЗаказСозданКорректно</name>
+      <description>Заказ создан корректно</description>
+      <code xsi:type="core:NumberValue">
+        <value>101</value>
+      </code>
+    </items>
+    <items id="ee87a13f-9fd7-4146-8adb-1a2ad0d80fd4">
+      <name>ЗаказУтерян</name>
+      <description>Заказ утерян</description>
+      <code xsi:type="core:NumberValue">
+        <value>403</value>
+      </code>
+    </items>
+    <items id="8b4664a7-ad80-4ef6-b3c3-fc821413844d">
+      <name>ОшибкаСозданияЗаказа</name>
+      <description>Ошибка создания заказа</description>
+      <code xsi:type="core:NumberValue">
+        <value>102</value>
+      </code>
+    </items>
+    <items id="d8928545-d4d2-48ea-b5dd-4afede6af353">
+      <name>СЦПолученыДанныеОПланируемомВозврате</name>
+      <description>СЦ получены данные о планируемом возврате</description>
+      <code xsi:type="core:NumberValue">
+        <value>160</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.СтатусыОтправлений.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СтатусыОтправлений.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="d5087660-99cf-4b1e-a269-d307de5354c6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d674c42f-3569-4725-b839-b619afab5e4a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

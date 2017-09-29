@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85950833-5492-4e94-9579-2e0b35a08864">
+  <producedTypes>
+    <objectType typeId="837773a9-3a12-44aa-a577-20ce5eb77c60" valueTypeId="227a61f5-d117-4577-9f00-04453efcc489"/>
+    <refType typeId="c431da2a-0592-47d6-a6ce-00bafce652ce" valueTypeId="5607e932-99a3-4405-9e09-1e4d6838d384"/>
+    <selectionType typeId="bec8777b-64cb-49ab-a3cb-50597ca09ce1" valueTypeId="392af74f-7ef1-4672-8f91-d359c0eafd68"/>
+    <listType typeId="344750b8-6f8d-4e75-b31b-7fb6fcf4f7a0" valueTypeId="4efbfac7-2b5b-47b2-bbdd-e1d1b39a2098"/>
+    <managerType typeId="86ab7de4-5a10-4469-b717-ac883fc5953f" valueTypeId="7eee4969-906b-4dc0-bda0-d8c7b3a4e906"/>
+  </producedTypes>
+  <name>СкладыВозврата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склады возврата</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.СкладыВозврата.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СкладыВозврата.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.СкладыВозврата.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СкладыВозврата.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="2ff8e2ad-ba50-44f6-a69d-275ddce06e06">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="6182351a-e1e4-46ed-8bf9-5e657b729d83">
+    <name>КонтактноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="29bf9ae7-35e7-42ee-a781-ffc36f64a031">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="34dc360b-5399-44da-b7cf-d09780d6afa6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="130f2197-419a-46c4-961e-12009f50de57">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

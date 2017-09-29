@@ -1,0 +1,1906 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.strizh-logistic.ru/1C/Storage"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://v8.1c.ru/8.1/data/core"
+		xmlns:xsd2="http://www.strizh-logistic.ru/1C/Storage"
+		xmlns:xsd3="http://v8.1c.ru/8.3/data/ext"
+		name="Storage"
+		targetNamespace="http://www.strizh-logistic.ru/1C/Storage">
+	<types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://www.strizh-logistic.ru/1C/Storage"
+				xmlns:xs2="http://v8.1c.ru/8.1/data/core"
+				xmlns:xs3="http://v8.1c.ru/8.3/data/ext"
+				targetNamespace="http://www.strizh-logistic.ru/1C/Storage"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://v8.1c.ru/8.1/data/core"/>
+			<xs:import namespace="http://v8.1c.ru/8.3/data/ext"/>
+			<xs:complexType name="ArrayOfDBServers">
+				<xs:sequence>
+					<xs:element name="DBServer"
+							type="xsd2:DBServer"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfDataApp">
+				<xs:sequence>
+					<xs:element name="DataApp"
+							type="xsd2:DataApp"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfDataAppStatus">
+				<xs:sequence>
+					<xs:element name="DataAppStatus"
+							type="xsd2:DataAppStatus"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfDataParameters">
+				<xs:sequence>
+					<xs:element name="DataParameters"
+							type="xsd2:DataParameters"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfNumber">
+				<xs:sequence>
+					<xs:element name="NumberRow"
+							type="xsd2:NumberRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DBServer">
+				<xs:sequence>
+					<xs:element name="ID"
+							type="xs:string"/>
+					<xs:element name="Name"
+							type="xs:string"/>
+					<xs:element name="Login"
+							type="xs:string"/>
+					<xs:element name="Password"
+							type="xs:string"/>
+					<xs:element name="WSDLAddress"
+							type="xs:string"/>
+					<xs:element name="WSDLAddressTest"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DataApp">
+				<xs:sequence>
+					<xs:element name="DocumetType"
+							type="xs:int"
+							nillable="true"/>
+					<xs:element name="Number"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="Date"
+							type="xs:date"
+							nillable="true"/>
+					<xs:element name="InternetShop"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="ServiceDelivery"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="Warehouse"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="DocumetFilled"
+							type="xs:boolean"
+							nillable="true"/>
+					<xs:element name="TableDataAppShipments"
+							type="xsd2:TableDataAppShipments"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="TableDataAppNotFoundBarcode"
+							type="xsd2:TableDataAppNotFoundBarcode"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="DeletionMark"
+							type="xs:boolean"
+							nillable="true"/>
+					<xs:element name="Posted"
+							type="xs:boolean"
+							nillable="true"/>
+					<xs:element name="CreateDocumentsByDocumetType"
+							type="xs:boolean"
+							nillable="true"/>
+					<xs:element name="MobileUser"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DataAppStatus">
+				<xs:sequence>
+					<xs:element name="Number"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="Status"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DataParameters">
+				<xs:sequence>
+					<xs:element name="Key"
+							type="xs:string"/>
+					<xs:element name="Value"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="InternetShop">
+				<xs:sequence>
+					<xs:element name="Number"
+							type="xs:string"/>
+					<xs:element name="Name"
+							type="xs:string"/>
+					<xs:element name="LongName"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="LastStateOfShipment">
+				<xs:sequence>
+					<xs:element name="State"
+							type="xs:int"/>
+					<xs:element name="DateStamp"
+							type="xs:dateTime"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="MobileUser">
+				<xs:sequence>
+					<xs:element name="Number"
+							type="xs:string"/>
+					<xs:element name="Name"
+							type="xs:string"/>
+					<xs:element name="Password"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="NumberRow">
+				<xs:sequence>
+					<xs:element name="Number"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Result">
+				<xs:sequence>
+					<xs:element name="Error"
+							type="xs:boolean"/>
+					<xs:element name="ErrorDescription"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ServiceDelivery">
+				<xs:sequence>
+					<xs:element name="Number"
+							type="xs:string"/>
+					<xs:element name="Name"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Shipment">
+				<xs:sequence>
+					<xs:element name="NumberYandex"
+							type="xs:string"/>
+					<xs:element name="NumberSC"
+							type="xs:string"/>
+					<xs:element name="NumberSD"
+							type="xs:string"/>
+					<xs:element name="Date"
+							type="xs:dateTime"/>
+					<xs:element name="Weight"
+							type="xs:decimal"/>
+					<xs:element name="ShipmentStatus"
+							type="xs:int"/>
+					<xs:element name="ServiceDelivery"
+							type="xs:string"/>
+					<xs:element name="InternetShop"
+							type="xs:string"/>
+					<xs:element name="Warehouse"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableDataAppNotFoundBarcode">
+				<xs:sequence>
+					<xs:element name="Barcode"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="NumberOfPlaces"
+							type="xs:int"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableDataAppShipments">
+				<xs:sequence>
+					<xs:element name="Barcode"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="NumberYandex"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="AvailableAtStatus"
+							type="xs:boolean"
+							nillable="true"/>
+					<xs:element name="AvailableOnScanner"
+							type="xs:boolean"
+							nillable="true"/>
+					<xs:element name="NumberOfPlaces"
+							type="xs:int"
+							nillable="true"/>
+					<xs:element name="CrossOut"
+							type="xs:boolean"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableInternetShop">
+				<xs:sequence>
+					<xs:element name="InternetShop"
+							type="xsd2:InternetShop"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableMobileUser">
+				<xs:sequence>
+					<xs:element name="MobileUser"
+							type="xsd2:MobileUser"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableServiceDelivery">
+				<xs:sequence>
+					<xs:element name="ServiceDelivery"
+							type="xsd2:ServiceDelivery"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableShipments">
+				<xs:sequence>
+					<xs:element name="Shipment"
+							type="xsd2:Shipment"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableWarehouse">
+				<xs:sequence>
+					<xs:element name="Warehouse"
+							type="xsd2:Warehouse"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Warehouse">
+				<xs:sequence>
+					<xs:element name="Number"
+							type="xs:string"/>
+					<xs:element name="Name"
+							type="xs:string"/>
+					<xs:element name="Address"
+							type="xs:string"/>
+					<xs:element name="ContactPerson"
+							type="xs:string"/>
+					<xs:element name="Phone"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="Get_Shipments">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TableShipments"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ServiceDelivery">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ServiceDeliveryResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TableServiceDelivery"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_InternetShop">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_InternetShopResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TableInternetShop"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_Warehouse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_WarehouseResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TableWarehouse"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatus">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Status"
+								type="xs:int"/>
+						<xs:element name="InternetShop"
+								type="xs:string"
+								nillable="true"/>
+						<xs:element name="ServiceDelivery"
+								type="xs:string"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatusResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfNumber"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ExchangePlansDeleteChangeRecords">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+						<xs:element name="TypeMetadata"
+								type="xs:string"/>
+						<xs:element name="ArrayOfNumber"
+								type="xsd2:ArrayOfNumber"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ExchangePlansDeleteChangeRecordsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_MobileUser">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_MobileUserResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:TableServiceDelivery"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Create_DataApp">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ArrayOfDataApp"
+								type="xsd2:ArrayOfDataApp"/>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Create_DataAppResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:Result"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_DataParameters">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_DataParametersResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfDataParameters"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SetDeliverableNotificationSubscriberID">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="DeliverableNotificationSubscriberID"
+								type="xsd3:DeliverableNotificationSubscriberID"/>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SetDeliverableNotificationSubscriberIDResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:byte"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_InternetShopID">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_InternetShopIDResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_DataAppStatus">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_DataAppStatusResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfDataAppStatus"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatus2">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Status"
+								type="xs:int"/>
+						<xs:element name="InternetShop"
+								type="xs:string"
+								nillable="true"/>
+						<xs:element name="ServiceDelivery"
+								type="xs:string"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatus2Response">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfNumber"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_StatusByShipment">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Barcode"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_StatusByShipmentResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:LastStateOfShipment"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetRegisterShippingNumberByShipment">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ShipmentID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetRegisterShippingNumberByShipmentResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetRegisterReturnNumberByShipment">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ShipmentID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetRegisterReturnNumberByShipmentResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatusAndRegisterShipping">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Status"
+								type="xs:int"/>
+						<xs:element name="RegisterID"
+								type="xs:string"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatusAndRegisterShippingResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfNumber"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatusAndRegisterReturn">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Status"
+								type="xs:int"/>
+						<xs:element name="RegisterID"
+								type="xs:string"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get_ShipmentsByStatusAndRegisterReturnResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfNumber"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDataServers">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDataServersResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ArrayOfDBServers"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+		<xs:schema xmlns:tns="http://v8.1c.ru/8.1/data/core"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				targetNamespace="http://v8.1c.ru/8.1/data/core"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:simpleType name="AllowedLength">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Fixed"/>
+					<xs:enumeration value="Variable"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="AllowedSign">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Any"/>
+					<xs:enumeration value="Nonnegative"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Array">
+				<xs:sequence>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="BinaryDataQualifiers">
+				<xs:sequence>
+					<xs:element name="Length"
+							type="xs:decimal"/>
+					<xs:element name="AllowedLength"
+							type="xsd1:AllowedLength"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="CompositeID">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="-?[0-9]+(:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})?"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="DataFillError">
+				<xs:sequence>
+					<xs:element name="Data"
+							type="xs:string"/>
+					<xs:element name="DataDescr"
+							type="xs:string"/>
+					<xs:element name="Text"
+							type="xs:string"/>
+					<xs:element name="Status"
+							type="xsd1:FillCheckErrorStatus"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DataFillErrors">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd1:DataFillError"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="DateFractions">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Date"/>
+					<xs:enumeration value="Time"/>
+					<xs:enumeration value="DateTime"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="DateQualifiers">
+				<xs:sequence>
+					<xs:element name="DateFractions"
+							type="xsd1:DateFractions"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Exception">
+				<xs:complexContent>
+					<xs:extension base="xsd1:GenericException">
+						<xs:sequence>
+							<xs:element name="data"
+									type="xs:base64Binary"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:simpleType name="FillCheckErrorStatus">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Error"/>
+					<xs:enumeration value="Warning"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="FillChecking">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="DontCheck"/>
+					<xs:enumeration value="ShowError"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="FixedArray">
+				<xs:sequence>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="FixedMap">
+				<xs:sequence>
+					<xs:element name="pair"
+							type="xsd1:KeyAndValue"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="FixedStructure">
+				<xs:sequence>
+					<xs:element name="Property"
+							minOccurs="0"
+							maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Value"
+										nillable="true"/>
+							</xs:sequence>
+							<xs:attribute name="name"
+									type="xs:NMTOKEN"
+									use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="GenericException"
+					abstract="true">
+				<xs:sequence>
+					<xs:element name="descr"
+							type="xs:string"/>
+					<xs:element name="inner"
+							type="xsd1:GenericException"
+							minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="clsid"
+						type="xsd1:UUID"
+						use="required"/>
+				<xs:attribute name="encoded"
+						type="xs:boolean"
+						default="false"/>
+			</xs:complexType>
+			<xs:complexType name="KeyAndValue">
+				<xs:sequence>
+					<xs:element name="Key"/>
+					<xs:element name="Value"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="LocalStringItemType">
+				<xs:sequence>
+					<xs:element name="lang"
+							type="xs:NMTOKEN"/>
+					<xs:element name="content"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="LocalStringType">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd1:LocalStringItemType"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Map">
+				<xs:sequence>
+					<xs:element name="pair"
+							type="xsd1:KeyAndValue"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="Null">
+				<xs:restriction base="xs:string">
+					<xs:length value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="NumberQualifiers">
+				<xs:sequence>
+					<xs:element name="Digits"
+							type="xs:decimal"/>
+					<xs:element name="FractionDigits"
+							type="xs:decimal"/>
+					<xs:element name="AllowedSign"
+							type="xsd1:AllowedSign"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ObjectVersion">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9a-fA-F]{40}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="StandardBeginningDate">
+				<xs:sequence>
+					<xs:element name="variant"/>
+					<xs:element name="date"
+							type="xs:dateTime"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="StandardBeginningDateVariant">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Custom"/>
+					<xs:enumeration value="BeginningOfThisDay"/>
+					<xs:enumeration value="BeginningOfThisWeek"/>
+					<xs:enumeration value="BeginningOfThisTenDays"/>
+					<xs:enumeration value="BeginningOfThisMonth"/>
+					<xs:enumeration value="BeginningOfThisQuarter"/>
+					<xs:enumeration value="BeginningOfThisHalfYear"/>
+					<xs:enumeration value="BeginningOfThisYear"/>
+					<xs:enumeration value="BeginningOfLastDay"/>
+					<xs:enumeration value="BeginningOfLastWeek"/>
+					<xs:enumeration value="BeginningOfLastTenDays"/>
+					<xs:enumeration value="BeginningOfLastMonth"/>
+					<xs:enumeration value="BeginningOfLastQuarter"/>
+					<xs:enumeration value="BeginningOfLastHalfYear"/>
+					<xs:enumeration value="BeginningOfLastYear"/>
+					<xs:enumeration value="BeginningOfNextDay"/>
+					<xs:enumeration value="BeginningOfNextWeek"/>
+					<xs:enumeration value="BeginningOfNextTenDays"/>
+					<xs:enumeration value="BeginningOfNextMonth"/>
+					<xs:enumeration value="BeginningOfNextQuarter"/>
+					<xs:enumeration value="BeginningOfNextHalfYear"/>
+					<xs:enumeration value="BeginningOfNextYear"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="StandardPeriod">
+				<xs:sequence>
+					<xs:element name="variant"/>
+					<xs:element name="startDate"
+							type="xs:dateTime"
+							minOccurs="0"/>
+					<xs:element name="endDate"
+							type="xs:dateTime"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="StandardPeriodVariant">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Custom"/>
+					<xs:enumeration value="Today"/>
+					<xs:enumeration value="ThisWeek"/>
+					<xs:enumeration value="ThisTenDays"/>
+					<xs:enumeration value="ThisMonth"/>
+					<xs:enumeration value="ThisQuarter"/>
+					<xs:enumeration value="ThisHalfYear"/>
+					<xs:enumeration value="ThisYear"/>
+					<xs:enumeration value="FromBeginningOfThisWeek"/>
+					<xs:enumeration value="FromBeginningOfThisTenDays"/>
+					<xs:enumeration value="FromBeginningOfThisMonth"/>
+					<xs:enumeration value="FromBeginningOfThisQuarter"/>
+					<xs:enumeration value="FromBeginningOfThisHalfYear"/>
+					<xs:enumeration value="FromBeginningOfThisYear"/>
+					<xs:enumeration value="Yesterday"/>
+					<xs:enumeration value="LastWeek"/>
+					<xs:enumeration value="LastTenDays"/>
+					<xs:enumeration value="LastMonth"/>
+					<xs:enumeration value="LastQuarter"/>
+					<xs:enumeration value="LastHalfYear"/>
+					<xs:enumeration value="LastYear"/>
+					<xs:enumeration value="LastWeekTillSameWeekDay"/>
+					<xs:enumeration value="LastTenDaysTillSameDayNumber"/>
+					<xs:enumeration value="LastMonthTillSameDate"/>
+					<xs:enumeration value="LastQuarterTillSameDate"/>
+					<xs:enumeration value="LastHalfYearTillSameDate"/>
+					<xs:enumeration value="LastYearTillSameDate"/>
+					<xs:enumeration value="Tomorrow"/>
+					<xs:enumeration value="NextWeek"/>
+					<xs:enumeration value="NextTenDays"/>
+					<xs:enumeration value="NextMonth"/>
+					<xs:enumeration value="NextQuarter"/>
+					<xs:enumeration value="NextHalfYear"/>
+					<xs:enumeration value="NextYear"/>
+					<xs:enumeration value="NextWeekTillSameWeekDay"/>
+					<xs:enumeration value="NextTenDaysTillSameDayNumber"/>
+					<xs:enumeration value="NextMonthTillSameDate"/>
+					<xs:enumeration value="NextQuarterTillSameDate"/>
+					<xs:enumeration value="NextHalfYearTillSameDate"/>
+					<xs:enumeration value="NextYearTillSameDate"/>
+					<xs:enumeration value="TillEndOfThisWeek"/>
+					<xs:enumeration value="TillEndOfThisTenDays"/>
+					<xs:enumeration value="TillEndOfThisMonth"/>
+					<xs:enumeration value="TillEndOfThisQuarter"/>
+					<xs:enumeration value="TillEndOfThisHalfYear"/>
+					<xs:enumeration value="TillEndOfThisYear"/>
+					<xs:enumeration value="Last7Days"/>
+					<xs:enumeration value="Next7Days"/>
+					<xs:enumeration value="Month"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="StringQualifiers">
+				<xs:sequence>
+					<xs:element name="Length"
+							type="xs:decimal"/>
+					<xs:element name="AllowedLength"
+							type="xsd1:AllowedLength"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Structure">
+				<xs:sequence>
+					<xs:element name="Property"
+							minOccurs="0"
+							maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Value"
+										nillable="true"/>
+							</xs:sequence>
+							<xs:attribute name="name"
+									type="xs:NMTOKEN"
+									use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="Type">
+				<xs:restriction base="xs:QName"/>
+			</xs:simpleType>
+			<xs:complexType name="TypeDescription">
+				<xs:sequence>
+					<xs:element name="Type"
+							type="xs:QName"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="TypeSet"
+							type="xs:QName"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="TypeId"
+							type="xsd1:UUID"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="NumberQualifiers"
+							type="xsd1:NumberQualifiers"
+							minOccurs="0"/>
+					<xs:element name="StringQualifiers"
+							type="xsd1:StringQualifiers"
+							minOccurs="0"/>
+					<xs:element name="DateQualifiers"
+							type="xsd1:DateQualifiers"
+							minOccurs="0"/>
+					<xs:element name="BinaryDataQualifiers"
+							type="xsd1:BinaryDataQualifiers"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="UUID">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ValueListItemType">
+				<xs:sequence>
+					<xs:element name="value"
+							nillable="true"/>
+					<xs:element name="presentation"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="checkState"
+							type="xs:decimal"
+							minOccurs="0"/>
+					<xs:element name="picture"
+							minOccurs="0"/>
+					<xs:element name="id"
+							type="xs:long"
+							minOccurs="0"/>
+					<xs:element name="formatPresentationSpecified"
+							type="xs:boolean"
+							minOccurs="0"/>
+					<xs:element name="formatPresentation"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueListType">
+				<xs:choice>
+					<xs:element name="valueType"
+							type="xsd1:TypeDescription"/>
+					<xs:element name="availableValues"
+							type="xsd1:ValueListType"
+							minOccurs="0"/>
+					<xs:element name="item"
+							type="xsd1:ValueListItemType"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="lastId"
+							type="xs:long"
+							minOccurs="0"/>
+				</xs:choice>
+			</xs:complexType>
+			<xs:simpleType name="ValueStorage">
+				<xs:restriction base="xs:base64Binary"/>
+			</xs:simpleType>
+			<xs:complexType name="ValueTable">
+				<xs:sequence>
+					<xs:element name="column"
+							type="xsd1:ValueTableColumn"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="index"
+							type="xsd1:ValueTableIndex"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="row"
+							type="xsd1:ValueTableRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTableColumn">
+				<xs:sequence>
+					<xs:element name="Name"
+							type="xs:NMTOKEN"
+							minOccurs="0"/>
+					<xs:element name="ValueType"
+							type="xsd1:TypeDescription"
+							minOccurs="0"/>
+					<xs:element name="Title"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="Width"
+							type="xs:nonNegativeInteger"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTableIndex">
+				<xs:sequence>
+					<xs:element name="column"
+							type="xs:NMTOKEN"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTableRow">
+				<xs:sequence>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTree">
+				<xs:sequence>
+					<xs:element name="column"
+							type="xsd1:ValueTreeColumn"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="row"
+							type="xsd1:ValueTreeRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTreeColumn">
+				<xs:sequence>
+					<xs:element name="Name"
+							type="xs:NMTOKEN"
+							minOccurs="0"/>
+					<xs:element name="ValueType"
+							type="xsd1:TypeDescription"
+							minOccurs="0"/>
+					<xs:element name="Title"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="Width"
+							type="xs:nonNegativeInteger"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTreeRow">
+				<xs:sequence>
+					<xs:element name="row"
+							type="xsd1:ValueTreeRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:ns1="http://v8.1c.ru/8.1/data/core"
+				xmlns:tns="http://v8.1c.ru/8.3/data/ext"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				targetNamespace="http://v8.1c.ru/8.3/data/ext"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://v8.1c.ru/8.1/data/core"/>
+			<xs:complexType name="AddressData">
+				<xs:sequence>
+					<xs:element name="rowData"
+							type="xsd1:Map"
+							minOccurs="0"/>
+					<xs:element name="presentation"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="street"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="house"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="city"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="country"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="zipCode"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="state"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="primaryAddress"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="additionalAddress"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="addressString"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DeliverableNotificationSubscriberID">
+				<xs:sequence>
+					<xs:element name="subscriberType"
+							type="xsd3:DeliverableNotificationSubscriberType"/>
+					<xs:element name="deviceID"
+							type="xs:string"/>
+					<xs:element name="applicationID"
+							type="xs:string"/>
+					<xs:element name="databaseID"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="DeliverableNotificationSubscriberType">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="APNS"/>
+					<xs:enumeration value="GCM"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="GeographicCoordinates">
+				<xs:attribute name="latitude"
+						type="xs:double"
+						use="required"/>
+				<xs:attribute name="longitude"
+						type="xs:double"
+						use="required"/>
+				<xs:attribute name="altitude"
+						type="xs:double"
+						default="0"/>
+			</xs:complexType>
+			<xs:complexType name="InAppPurchaseReceipt">
+				<xs:sequence>
+					<xs:element name="service"
+							type="xsd3:InAppPurchaseService"
+							minOccurs="0"/>
+					<xs:element name="data"
+							type="xs:base64Binary"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="InAppPurchaseService">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="GooglePlayInAppBilling"/>
+					<xs:enumeration value="AppleInAppPurchase"/>
+					<xs:enumeration value="WindowsInAppPurchase"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="LocationData">
+				<xs:sequence>
+					<xs:element name="coordinates"
+							type="xsd3:GeographicCoordinates"/>
+					<xs:element name="heading"
+							type="xs:double"/>
+					<xs:element name="speed"
+							type="xs:double"/>
+					<xs:element name="horizontalAccuracy"
+							type="xs:double"/>
+					<xs:element name="verticalAccurcy"
+							type="xs:double"/>
+				</xs:sequence>
+				<xs:attribute name="date"
+						type="xs:dateTime"/>
+			</xs:complexType>
+			<xs:simpleType name="SoundAlert">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="None"/>
+					<xs:enumeration value="Default"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:schema>
+	</types>
+	<message name="Get_ShipmentsRequestMessage">
+		<part name="parameters"
+				element="tns:Get_Shipments"/>
+	</message>
+	<message name="Get_ShipmentsResponseMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsResponse"/>
+	</message>
+	<message name="Get_ServiceDeliveryRequestMessage">
+		<part name="parameters"
+				element="tns:Get_ServiceDelivery"/>
+	</message>
+	<message name="Get_ServiceDeliveryResponseMessage">
+		<part name="parameters"
+				element="tns:Get_ServiceDeliveryResponse"/>
+	</message>
+	<message name="Get_InternetShopRequestMessage">
+		<part name="parameters"
+				element="tns:Get_InternetShop"/>
+	</message>
+	<message name="Get_InternetShopResponseMessage">
+		<part name="parameters"
+				element="tns:Get_InternetShopResponse"/>
+	</message>
+	<message name="Get_WarehouseRequestMessage">
+		<part name="parameters"
+				element="tns:Get_Warehouse"/>
+	</message>
+	<message name="Get_WarehouseResponseMessage">
+		<part name="parameters"
+				element="tns:Get_WarehouseResponse"/>
+	</message>
+	<message name="Get_ShipmentsByStatusRequestMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatus"/>
+	</message>
+	<message name="Get_ShipmentsByStatusResponseMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatusResponse"/>
+	</message>
+	<message name="ExchangePlansDeleteChangeRecordsRequestMessage">
+		<part name="parameters"
+				element="tns:ExchangePlansDeleteChangeRecords"/>
+	</message>
+	<message name="ExchangePlansDeleteChangeRecordsResponseMessage">
+		<part name="parameters"
+				element="tns:ExchangePlansDeleteChangeRecordsResponse"/>
+	</message>
+	<message name="Get_MobileUserRequestMessage">
+		<part name="parameters"
+				element="tns:Get_MobileUser"/>
+	</message>
+	<message name="Get_MobileUserResponseMessage">
+		<part name="parameters"
+				element="tns:Get_MobileUserResponse"/>
+	</message>
+	<message name="Create_DataAppRequestMessage">
+		<part name="parameters"
+				element="tns:Create_DataApp"/>
+	</message>
+	<message name="Create_DataAppResponseMessage">
+		<part name="parameters"
+				element="tns:Create_DataAppResponse"/>
+	</message>
+	<message name="Get_DataParametersRequestMessage">
+		<part name="parameters"
+				element="tns:Get_DataParameters"/>
+	</message>
+	<message name="Get_DataParametersResponseMessage">
+		<part name="parameters"
+				element="tns:Get_DataParametersResponse"/>
+	</message>
+	<message name="SetDeliverableNotificationSubscriberIDRequestMessage">
+		<part name="parameters"
+				element="tns:SetDeliverableNotificationSubscriberID"/>
+	</message>
+	<message name="SetDeliverableNotificationSubscriberIDResponseMessage">
+		<part name="parameters"
+				element="tns:SetDeliverableNotificationSubscriberIDResponse"/>
+	</message>
+	<message name="Get_InternetShopIDRequestMessage">
+		<part name="parameters"
+				element="tns:Get_InternetShopID"/>
+	</message>
+	<message name="Get_InternetShopIDResponseMessage">
+		<part name="parameters"
+				element="tns:Get_InternetShopIDResponse"/>
+	</message>
+	<message name="Get_DataAppStatusRequestMessage">
+		<part name="parameters"
+				element="tns:Get_DataAppStatus"/>
+	</message>
+	<message name="Get_DataAppStatusResponseMessage">
+		<part name="parameters"
+				element="tns:Get_DataAppStatusResponse"/>
+	</message>
+	<message name="Get_ShipmentsByStatus2RequestMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatus2"/>
+	</message>
+	<message name="Get_ShipmentsByStatus2ResponseMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatus2Response"/>
+	</message>
+	<message name="Get_StatusByShipmentRequestMessage">
+		<part name="parameters"
+				element="tns:Get_StatusByShipment"/>
+	</message>
+	<message name="Get_StatusByShipmentResponseMessage">
+		<part name="parameters"
+				element="tns:Get_StatusByShipmentResponse"/>
+	</message>
+	<message name="GetRegisterShippingNumberByShipmentRequestMessage">
+		<part name="parameters"
+				element="tns:GetRegisterShippingNumberByShipment"/>
+	</message>
+	<message name="GetRegisterShippingNumberByShipmentResponseMessage">
+		<part name="parameters"
+				element="tns:GetRegisterShippingNumberByShipmentResponse"/>
+	</message>
+	<message name="GetRegisterReturnNumberByShipmentRequestMessage">
+		<part name="parameters"
+				element="tns:GetRegisterReturnNumberByShipment"/>
+	</message>
+	<message name="GetRegisterReturnNumberByShipmentResponseMessage">
+		<part name="parameters"
+				element="tns:GetRegisterReturnNumberByShipmentResponse"/>
+	</message>
+	<message name="Get_ShipmentsByStatusAndRegisterShippingRequestMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatusAndRegisterShipping"/>
+	</message>
+	<message name="Get_ShipmentsByStatusAndRegisterShippingResponseMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatusAndRegisterShippingResponse"/>
+	</message>
+	<message name="Get_ShipmentsByStatusAndRegisterReturnRequestMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatusAndRegisterReturn"/>
+	</message>
+	<message name="Get_ShipmentsByStatusAndRegisterReturnResponseMessage">
+		<part name="parameters"
+				element="tns:Get_ShipmentsByStatusAndRegisterReturnResponse"/>
+	</message>
+	<message name="GetDataServersRequestMessage">
+		<part name="parameters"
+				element="tns:GetDataServers"/>
+	</message>
+	<message name="GetDataServersResponseMessage">
+		<part name="parameters"
+				element="tns:GetDataServersResponse"/>
+	</message>
+	<portType name="StoragePortType">
+		<operation name="Get_Shipments">
+			<input name="Get_ShipmentsRequest"
+					message="tns:Get_ShipmentsRequestMessage"/>
+			<output name="Get_ShipmentsResponse"
+					message="tns:Get_ShipmentsResponseMessage"/>
+		</operation>
+		<operation name="Get_ServiceDelivery">
+			<input name="Get_ServiceDeliveryRequest"
+					message="tns:Get_ServiceDeliveryRequestMessage"/>
+			<output name="Get_ServiceDeliveryResponse"
+					message="tns:Get_ServiceDeliveryResponseMessage"/>
+		</operation>
+		<operation name="Get_InternetShop">
+			<input name="Get_InternetShopRequest"
+					message="tns:Get_InternetShopRequestMessage"/>
+			<output name="Get_InternetShopResponse"
+					message="tns:Get_InternetShopResponseMessage"/>
+		</operation>
+		<operation name="Get_Warehouse">
+			<input name="Get_WarehouseRequest"
+					message="tns:Get_WarehouseRequestMessage"/>
+			<output name="Get_WarehouseResponse"
+					message="tns:Get_WarehouseResponseMessage"/>
+		</operation>
+		<operation name="Get_ShipmentsByStatus">
+			<input name="Get_ShipmentsByStatusRequest"
+					message="tns:Get_ShipmentsByStatusRequestMessage"/>
+			<output name="Get_ShipmentsByStatusResponse"
+					message="tns:Get_ShipmentsByStatusResponseMessage"/>
+		</operation>
+		<operation name="ExchangePlansDeleteChangeRecords">
+			<input name="ExchangePlansDeleteChangeRecordsRequest"
+					message="tns:ExchangePlansDeleteChangeRecordsRequestMessage"/>
+			<output name="ExchangePlansDeleteChangeRecordsResponse"
+					message="tns:ExchangePlansDeleteChangeRecordsResponseMessage"/>
+		</operation>
+		<operation name="Get_MobileUser">
+			<input name="Get_MobileUserRequest"
+					message="tns:Get_MobileUserRequestMessage"/>
+			<output name="Get_MobileUserResponse"
+					message="tns:Get_MobileUserResponseMessage"/>
+		</operation>
+		<operation name="Create_DataApp">
+			<input name="Create_DataAppRequest"
+					message="tns:Create_DataAppRequestMessage"/>
+			<output name="Create_DataAppResponse"
+					message="tns:Create_DataAppResponseMessage"/>
+		</operation>
+		<operation name="Get_DataParameters">
+			<input name="Get_DataParametersRequest"
+					message="tns:Get_DataParametersRequestMessage"/>
+			<output name="Get_DataParametersResponse"
+					message="tns:Get_DataParametersResponseMessage"/>
+		</operation>
+		<operation name="SetDeliverableNotificationSubscriberID">
+			<input name="SetDeliverableNotificationSubscriberIDRequest"
+					message="tns:SetDeliverableNotificationSubscriberIDRequestMessage"/>
+			<output name="SetDeliverableNotificationSubscriberIDResponse"
+					message="tns:SetDeliverableNotificationSubscriberIDResponseMessage"/>
+		</operation>
+		<operation name="Get_InternetShopID">
+			<input name="Get_InternetShopIDRequest"
+					message="tns:Get_InternetShopIDRequestMessage"/>
+			<output name="Get_InternetShopIDResponse"
+					message="tns:Get_InternetShopIDResponseMessage"/>
+		</operation>
+		<operation name="Get_DataAppStatus">
+			<input name="Get_DataAppStatusRequest"
+					message="tns:Get_DataAppStatusRequestMessage"/>
+			<output name="Get_DataAppStatusResponse"
+					message="tns:Get_DataAppStatusResponseMessage"/>
+		</operation>
+		<operation name="Get_ShipmentsByStatus2">
+			<input name="Get_ShipmentsByStatus2Request"
+					message="tns:Get_ShipmentsByStatus2RequestMessage"/>
+			<output name="Get_ShipmentsByStatus2Response"
+					message="tns:Get_ShipmentsByStatus2ResponseMessage"/>
+		</operation>
+		<operation name="Get_StatusByShipment">
+			<input name="Get_StatusByShipmentRequest"
+					message="tns:Get_StatusByShipmentRequestMessage"/>
+			<output name="Get_StatusByShipmentResponse"
+					message="tns:Get_StatusByShipmentResponseMessage"/>
+		</operation>
+		<operation name="GetRegisterShippingNumberByShipment">
+			<input name="GetRegisterShippingNumberByShipmentRequest"
+					message="tns:GetRegisterShippingNumberByShipmentRequestMessage"/>
+			<output name="GetRegisterShippingNumberByShipmentResponse"
+					message="tns:GetRegisterShippingNumberByShipmentResponseMessage"/>
+		</operation>
+		<operation name="GetRegisterReturnNumberByShipment">
+			<input name="GetRegisterReturnNumberByShipmentRequest"
+					message="tns:GetRegisterReturnNumberByShipmentRequestMessage"/>
+			<output name="GetRegisterReturnNumberByShipmentResponse"
+					message="tns:GetRegisterReturnNumberByShipmentResponseMessage"/>
+		</operation>
+		<operation name="Get_ShipmentsByStatusAndRegisterShipping">
+			<input name="Get_ShipmentsByStatusAndRegisterShippingRequest"
+					message="tns:Get_ShipmentsByStatusAndRegisterShippingRequestMessage"/>
+			<output name="Get_ShipmentsByStatusAndRegisterShippingResponse"
+					message="tns:Get_ShipmentsByStatusAndRegisterShippingResponseMessage"/>
+		</operation>
+		<operation name="Get_ShipmentsByStatusAndRegisterReturn">
+			<input name="Get_ShipmentsByStatusAndRegisterReturnRequest"
+					message="tns:Get_ShipmentsByStatusAndRegisterReturnRequestMessage"/>
+			<output name="Get_ShipmentsByStatusAndRegisterReturnResponse"
+					message="tns:Get_ShipmentsByStatusAndRegisterReturnResponseMessage"/>
+		</operation>
+		<operation name="GetDataServers">
+			<input name="GetDataServersRequest"
+					message="tns:GetDataServersRequestMessage"/>
+			<output name="GetDataServersResponse"
+					message="tns:GetDataServersResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="StorageSoapBinding"
+			type="tns:StoragePortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="Get_Shipments">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_Shipments"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ServiceDelivery">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ServiceDelivery"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_InternetShop">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_InternetShop"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_Warehouse">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_Warehouse"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatus">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatus"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExchangePlansDeleteChangeRecords">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:ExchangePlansDeleteChangeRecords"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_MobileUser">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_MobileUser"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Create_DataApp">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Create_DataApp"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_DataParameters">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_DataParameters"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetDeliverableNotificationSubscriberID">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:SetDeliverableNotificationSubscriberID"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_InternetShopID">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_InternetShopID"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_DataAppStatus">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_DataAppStatus"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatus2">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatus2"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_StatusByShipment">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_StatusByShipment"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetRegisterShippingNumberByShipment">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:GetRegisterShippingNumberByShipment"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetRegisterReturnNumberByShipment">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:GetRegisterReturnNumberByShipment"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatusAndRegisterShipping">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatusAndRegisterShipping"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatusAndRegisterReturn">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatusAndRegisterReturn"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDataServers">
+			<soapbind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:GetDataServers"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="StorageSoap12Binding"
+			type="tns:StoragePortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="Get_Shipments">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_Shipments"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ServiceDelivery">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ServiceDelivery"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_InternetShop">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_InternetShop"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_Warehouse">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_Warehouse"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatus">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatus"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExchangePlansDeleteChangeRecords">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:ExchangePlansDeleteChangeRecords"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_MobileUser">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_MobileUser"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Create_DataApp">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Create_DataApp"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_DataParameters">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_DataParameters"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetDeliverableNotificationSubscriberID">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:SetDeliverableNotificationSubscriberID"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_InternetShopID">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_InternetShopID"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_DataAppStatus">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_DataAppStatus"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatus2">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatus2"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_StatusByShipment">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_StatusByShipment"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetRegisterShippingNumberByShipment">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:GetRegisterShippingNumberByShipment"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetRegisterReturnNumberByShipment">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:GetRegisterReturnNumberByShipment"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatusAndRegisterShipping">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatusAndRegisterShipping"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get_ShipmentsByStatusAndRegisterReturn">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:Get_ShipmentsByStatusAndRegisterReturn"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDataServers">
+			<soap12bind:operation style="document"
+					soapAction="http://www.strizh-logistic.ru/1C/Storage#Storage:GetDataServers"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="Storage">
+		<port name="StorageSoap"
+				binding="tns:StorageSoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="http://192.168.5.134/yasc/ws/Storage.1cws"/>
+		</port>
+		<port name="StorageSoap12"
+				binding="tns:StorageSoap12Binding">
+			<soap12bind:address location="http://192.168.5.134/yasc/ws/Storage.1cws"/>
+		</port>
+	</service>
+</definitions>

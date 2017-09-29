@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddfbf727-f550-4a04-8fa1-3505b55ba724">
+  <name>ВыполняетсяОбмен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполняется обмен</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+</mdclass:SessionParameter>

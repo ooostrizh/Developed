@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11368806-cd0a-4106-93d4-99379d8f5de3">
+  <producedTypes>
+    <objectType typeId="f68eb0d4-d1db-4dc8-83e7-2365b90e2941" valueTypeId="a2b2f647-30a7-4ff8-8214-cd3e450289d7"/>
+    <refType typeId="2363e04e-8b51-48ae-bde9-3ca8965eee16" valueTypeId="47aa2151-dc6d-4cf9-800b-5381520d82da"/>
+    <selectionType typeId="b602b7a0-342b-480a-9994-49a430f81546" valueTypeId="1941155a-f89f-4f80-a734-99959072a166"/>
+    <listType typeId="d5452eaf-885d-41b5-beef-c2ab485e6612" valueTypeId="dbb292a5-6dd3-446a-ac20-a6125d220cc0"/>
+    <managerType typeId="657ee18f-c334-4bf1-a87b-c55d037e146d" valueTypeId="07375948-6c9b-4b4e-afad-3df2f014be90"/>
+  </producedTypes>
+  <name>ИнтернетМагазины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интернет магазины</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.ИнтернетМагазины.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ИнтернетМагазины.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ИнтернетМагазины.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ИнтернетМагазины.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="672f5d60-fd30-40a6-8e02-15332f836c83">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="55cb3c9b-7bd4-4c11-b055-569e788cfd60">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b11e496b-d306-402f-84d2-42256966412e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

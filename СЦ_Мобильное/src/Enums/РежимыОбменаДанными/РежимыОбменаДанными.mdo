@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7c41022-22e4-4d7f-a43c-bfdafcdb641e">
+  <producedTypes>
+    <refType typeId="47daa2fa-df86-455f-9523-9ec7c345502c" valueTypeId="adaceab5-562b-4def-b7fe-c944dd770567"/>
+    <listType typeId="540fd822-fc88-4ed2-9070-d5c49b2a883a" valueTypeId="8adac10f-283c-461f-8b09-d4af1c1b0058"/>
+    <managerType typeId="b7a505df-bbb5-4f0f-ac8b-7b56f6bc7538" valueTypeId="94dedea3-1f3c-4138-838a-ab61c340aad5"/>
+  </producedTypes>
+  <name>РежимыОбменаДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режимы обмена данными</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5093d20b-6ff5-4ab4-9271-108bb233e2bd">
+    <name>ЗагрузкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="aa86fff1-471c-4773-ab79-a84dd24891d6">
+    <name>ВыгрузкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка данных</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

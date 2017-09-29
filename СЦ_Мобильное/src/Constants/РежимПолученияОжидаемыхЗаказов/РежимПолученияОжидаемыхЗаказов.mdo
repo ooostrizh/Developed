@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d54f1670-bad5-4889-86a1-094666cd5245">
+  <producedTypes>
+    <managerType typeId="8c9680d0-b472-47ee-a5d9-26c516f69b5b" valueTypeId="16f98312-f849-4bc6-b9ed-ae53b101968f"/>
+    <valueManagerType typeId="8888cb0c-ea94-4590-a30e-4223c13944be" valueTypeId="0650ca09-09ca-456e-b824-5fd679236538"/>
+  </producedTypes>
+  <name>РежимПолученияОжидаемыхЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режим получения ожидаемых заказов</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>EnumRef.РежимПолученияОжидаемыхЗаказов</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

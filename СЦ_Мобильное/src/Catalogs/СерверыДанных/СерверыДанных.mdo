@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8748f389-dd89-41a8-ab9c-b9ea253af56c">
+  <producedTypes>
+    <objectType typeId="40f01897-97c7-48e7-805b-52c24ec616b7" valueTypeId="2d09778d-ac74-4027-b85f-e8779ed40ab6"/>
+    <refType typeId="54700f65-8afd-4dd7-8692-be63347107ab" valueTypeId="20c76607-b210-4608-bf0c-50de7558984b"/>
+    <selectionType typeId="0aec8f60-8917-45b2-939a-ef19d8b72f98" valueTypeId="03b108b3-b071-4be9-97f6-bfaa06d7ed2b"/>
+    <listType typeId="165f10f3-0c7e-48ae-a769-00680ecb9eff" valueTypeId="eeebca28-76a5-4e9d-b893-e2a72ecf4087"/>
+    <managerType typeId="6906dad1-5a34-4fd5-8da0-76c85efbe721" valueTypeId="a4fad883-429b-4cf9-804d-df9eaabc4ce9"/>
+  </producedTypes>
+  <name>СерверыДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Серверы данных</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.СерверыДанных.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СерверыДанных.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="e1c365a1-34b9-4ab2-9ac9-8c538f6d8c12">
+      <name>Сервер1</name>
+      <description>Сервер 1</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="f3d75e9c-e818-4d44-813b-eeb440182edc">
+      <name>Сервер2</name>
+      <description>Сервер 2</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СерверыДанных.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СерверыДанных.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="417e479a-e153-4fbc-902a-c3c66753f53a">
+    <name>АдресWSDL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес WSDL</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ee1df1b4-8059-4a15-8fcb-b0a22d540ca9">
+    <name>АдресWSDLтест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес WSDL_тест</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f58e7d0c-ffc3-4cf9-bb8e-6d472e31053d">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="2f06a41e-aa8c-45a1-a0e5-156fb3cf9a96">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="05e7a456-0af5-4e3c-9143-177f3762d3df">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bce54238-c266-43b0-9d7a-251f0f1502e7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

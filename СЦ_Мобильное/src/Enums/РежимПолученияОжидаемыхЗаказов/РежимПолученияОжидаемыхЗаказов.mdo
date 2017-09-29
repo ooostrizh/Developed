@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42b976d1-eb9d-4757-8229-a86031a0b6bc">
+  <producedTypes>
+    <refType typeId="eceb93fc-91c4-4153-b613-8cc166b2036e" valueTypeId="d5d086ed-d5e1-4758-9e10-ad42945b2499"/>
+    <listType typeId="b98cf01f-0f1e-4759-a68a-78a74589f2ed" valueTypeId="a4e9c800-7b14-4722-909b-17bf2772056c"/>
+    <managerType typeId="7944faae-6d03-4318-b0b3-fc57fc775152" valueTypeId="47d8fb25-f78c-424f-88b4-025dcf7de3b5"/>
+  </producedTypes>
+  <name>РежимПолученияОжидаемыхЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режим получения ожидаемых заказов</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="afe0bc75-3db8-4b2d-8280-77a37ea7de75">
+    <name>ПоМагазину</name>
+    <synonym>
+      <key>ru</key>
+      <value>По магазину</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0fdf1fd8-b6c2-4103-8984-b538ced18863">
+    <name>ПоРеестру</name>
+    <synonym>
+      <key>ru</key>
+      <value>По реестру</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="347d34ea-8fef-4161-a89c-eb09bb7a9e27">
+    <name>ПоЗабору</name>
+    <synonym>
+      <key>ru</key>
+      <value>По забору</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

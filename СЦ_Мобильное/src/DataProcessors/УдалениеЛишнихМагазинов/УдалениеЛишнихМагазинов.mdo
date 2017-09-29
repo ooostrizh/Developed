@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2d3f72d-d5fb-4e6e-9796-d8a81a91a21b">
+  <producedTypes>
+    <objectType typeId="fb003d2b-1475-4110-a461-d9c831a21294" valueTypeId="938657bd-5a25-4bc6-9d2b-363f27b5f0a1"/>
+    <managerType typeId="83deac76-1eb7-4e27-9211-9d3df4fbac53" valueTypeId="9e822cf3-ef44-4e8c-8552-5b6308d37076"/>
+  </producedTypes>
+  <name>УдалениеЛишнихМагазинов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление лишних магазинов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:DataProcessor>

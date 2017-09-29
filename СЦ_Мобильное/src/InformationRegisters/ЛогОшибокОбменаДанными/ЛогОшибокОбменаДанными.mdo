@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2daf19cf-e211-423f-adb2-424a479063c0">
+  <producedTypes>
+    <selectionType typeId="ca50e882-ef05-45c4-96b6-bfffcbe5482b" valueTypeId="78e4aef4-e7da-4335-b5e8-4af842565641"/>
+    <listType typeId="7c65e150-ff56-492e-a497-5bc48f833be4" valueTypeId="4201c5e8-f838-42d4-8bf8-da498d2ed3df"/>
+    <managerType typeId="6159b9ea-5fb4-4e09-b01f-43ba5f8d33d6" valueTypeId="c6e3379f-3673-44ce-b879-20229fc042f4"/>
+    <recordSetType typeId="48d22d0b-91a2-42ea-ace6-b76e620a5e99" valueTypeId="55d44b3d-13fe-4125-bbdc-739b2ee33131"/>
+    <recordKeyType typeId="e0e4202c-2e54-41fc-84c0-267c36b44b95" valueTypeId="c4ce2e0d-0bd8-44dd-b2ac-14ad88235789"/>
+    <recordType typeId="1c7db825-463f-4907-a90d-66be46375f73" valueTypeId="704b204a-981e-4d11-a876-62886687058a"/>
+    <recordManagerType typeId="1bfd6140-68e6-4ea9-87e0-d475c542b884" valueTypeId="d4a38247-55d9-4e42-bbf7-0594ea308d5b"/>
+  </producedTypes>
+  <name>ЛогОшибокОбменаДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лог ошибок обмена данными</value>
+  </synonym>
+  <comment></comment>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЛогОшибокОбменаДанными.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЛогОшибокОбменаДанными.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a54d6462-5118-453a-9de6-478347e57d5e">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="e8e81ba9-f104-4329-896d-bbc8d829388a">
+    <name>РежимОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим обмена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.РежимыОбменаДанными</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="da348e9d-b4c8-4049-a5ce-fd4289f159c2">
+    <name>СерверДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СерверыДанных</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6f92814a-520e-4278-8a76-a00ea3d1d795">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="49f86ad1-fa0b-4d28-bb41-29ad0dad84d9">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

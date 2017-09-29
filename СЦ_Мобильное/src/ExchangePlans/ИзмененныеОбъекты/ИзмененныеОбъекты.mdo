@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a32b11fa-1a97-4a7c-8e36-998ed4eedf99" thisNode="ad510bc0-75f5-43cd-a6d6-36ba0829c72b">
+  <producedTypes>
+    <objectType typeId="c5ff5dee-0106-4120-9db0-8d43e54afb58" valueTypeId="288c1606-9dfa-4665-872a-f983e92e3b66"/>
+    <refType typeId="46b9a682-ae29-4f2f-bd8e-5fb09dfc2cb0" valueTypeId="0f5da4a5-3de5-4c33-95e3-292c24ce13ec"/>
+    <selectionType typeId="5d686deb-fbed-48d8-96cf-5ee3a6e3b232" valueTypeId="6e947fe6-d605-46c5-a4b5-0c04b5e86428"/>
+    <listType typeId="a5b4d19d-c2a6-49bc-8931-259e42781dc6" valueTypeId="e8cacc71-7795-48aa-aeb5-4690eb6a3090"/>
+    <managerType typeId="00cadca3-9bea-4392-9d40-0e0cafe7b056" valueTypeId="96e5aa3a-ea81-4dd4-bb84-4c4848e4a831"/>
+  </producedTypes>
+  <name>ИзмененныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Измененные объекты</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>ExchangePlan.ИзмененныеОбъекты.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ИзмененныеОбъекты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Document.ПриемДанныхСоСканера</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ExchangePlan>

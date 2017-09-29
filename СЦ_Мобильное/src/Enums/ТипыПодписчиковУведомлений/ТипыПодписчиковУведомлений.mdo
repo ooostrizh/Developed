@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f33cbf56-9b9d-48e6-8602-d87997ffd6ce">
+  <producedTypes>
+    <refType typeId="2cf6cb13-c476-4280-8e37-9a304fb1801e" valueTypeId="0d4c63df-139d-444d-b7d8-7d42ca3acbe7"/>
+    <listType typeId="0eba7a7f-49f3-492a-8604-2defbafc01d2" valueTypeId="a056c419-b2db-44a4-a5d3-2fbe67535b4f"/>
+    <managerType typeId="c43d2c26-595c-4205-9eeb-41f54ed56ef7" valueTypeId="039459cc-a253-4cee-879b-ec4823283cf7"/>
+  </producedTypes>
+  <name>ТипыПодписчиковУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы подписчиков уведомлений</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7d5b5504-a2ac-445d-8ac8-fe56ca00c779">
+    <name>APNS</name>
+    <synonym>
+      <key>ru</key>
+      <value>APNS</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ca6e165a-f1ec-47e2-b4dd-2cb3e3fbc9f5">
+    <name>GCM</name>
+    <synonym>
+      <key>ru</key>
+      <value>GCM</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

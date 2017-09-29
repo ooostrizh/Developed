@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07f2a7ea-b0ba-4e04-859d-6bce239dca21">
+  <producedTypes>
+    <objectType typeId="38f1fec8-7308-4bf6-94da-ec9a803ecc92" valueTypeId="9cb3d0a0-7bf1-45b1-b795-7051b5769e9c"/>
+    <refType typeId="157ee96e-78aa-42a7-bb0a-a4ffd62888ca" valueTypeId="24b39ec8-259c-45c9-9ddb-a0a499a59b16"/>
+    <selectionType typeId="b239516a-da17-44a4-ba8e-ac7c4b8a968c" valueTypeId="c2507a35-eeee-490f-8898-51439fbabc65"/>
+    <listType typeId="b8661a1b-6acb-4d8c-a745-610391a93050" valueTypeId="e5bbc3cf-617e-4764-ba07-1e2016da631b"/>
+    <managerType typeId="2e5517fe-435a-4d7c-b221-c4cef80ea7aa" valueTypeId="8f9aee12-2d04-48d1-9d04-6c06d303a51d"/>
+  </producedTypes>
+  <name>СтатусыЗагрузкиДанныхВОсновноеПриложение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы загрузки данных в основное приложение</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.СтатусыЗагрузкиДанныхВОсновноеПриложение.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатусыЗагрузкиДанныхВОсновноеПриложение.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="7a17af6c-430c-4977-b275-20ecfe15122e">
+      <name>ДокументНеСоздан</name>
+      <description>Документ не создан</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="e44a6784-99b1-4cc7-bb8f-21a8d49b93da">
+      <name>ДокументСозданКорректно</name>
+      <description>Документ создан корректно</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="ee00fdf1-f100-4b85-9d73-53f0a3b55b79">
+      <name>ПоДокументуНеНайденыШтрихкоды</name>
+      <description>По документу не найдены штрихкоды</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

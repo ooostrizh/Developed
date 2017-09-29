@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43d3e1f4-336c-4b85-bb76-6e025119f4e7">
+  <producedTypes>
+    <objectType typeId="d7009c99-cd4c-4ab7-a49f-55473bce2e4f" valueTypeId="fcc958ed-6ddc-4cdb-acb1-5ca1c548314d"/>
+    <refType typeId="1581750f-2107-4ff4-b4cb-1cf8b974c91d" valueTypeId="1a8b94c6-3690-422e-9dea-79993123f869"/>
+    <selectionType typeId="3b68f1a7-55a7-4de8-bcb2-97f561548145" valueTypeId="5691d5c5-39da-49b2-b45d-7b314cb40ec7"/>
+    <listType typeId="25cbaa25-8b32-4c0f-98d4-dd4bc336ad73" valueTypeId="bceafcd9-f0a0-4728-83ff-f3649f5c8e7c"/>
+    <managerType typeId="cb7d5062-5704-42cf-bda6-15fb906197d3" valueTypeId="94887a81-116c-406b-af33-b4ee1dde9ba7"/>
+  </producedTypes>
+  <name>СортировочныеЦентры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сортировочные центры</value>
+  </synonym>
+  <comment></comment>
+  <inputByString>Catalog.СортировочныеЦентры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СортировочныеЦентры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="331b6ebd-af23-4b1f-976f-65fb8026aa92">
+      <name>ОсновнойСЦ</name>
+      <description>Основной СЦ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

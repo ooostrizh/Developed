@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77813933-4079-4bc7-a379-e4e83fdfeb0f">
+  <producedTypes>
+    <objectType typeId="ae50ca56-695a-490e-b601-0644fee9517e" valueTypeId="57e38fa1-7f16-4644-9115-f702a238fdd9"/>
+    <refType typeId="0bd2dda5-5316-4865-bf58-14c583896b83" valueTypeId="1a42468f-81e8-4601-b685-06082081f743"/>
+    <selectionType typeId="b8725034-ba3f-495b-84db-e49e0065dab0" valueTypeId="3282ef09-0a3a-4e89-8fad-9966c883313c"/>
+    <listType typeId="0eeae5ce-06e2-4bcc-a096-2aedc4a79834" valueTypeId="d6b2f22d-44d0-4c1f-ac4c-8a1e6a994d01"/>
+    <managerType typeId="6d31965f-f43f-4022-b9b6-8e87b51ce409" valueTypeId="38a6aae3-4e55-4cc6-ba16-82f70d64fec7"/>
+  </producedTypes>
+  <name>ПриемДанныхСоСканера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прием данных со сканера</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриемДанныхСоСканера.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриемДанныхСоСканера.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПриемДанныхСоСканера.Form.ФормаСписка</defaultListForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="3fdaa9a7-7b91-4c09-b3cd-04292f2e6a69">
+    <name>ТипСбораДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сбора данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ТипСбораДанных</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f9055810-ac16-446d-8c36-9ed7e502956b">
+    <name>ИнтернетМагазин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интернет магазин</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИнтернетМагазины</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="daef439a-a2b9-4d24-8e15-906a31fbd97f">
+    <name>СкладВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад возврата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СкладыВозврата</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3b48ca9a-b0e5-48aa-b01c-91eb2edb4d02">
+    <name>СлужбаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служба доставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СлужбыДоставки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="81106508-a3a4-48d5-a1f0-1218c8bb0928">
+    <name>СтатусДляЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус для заполнения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатусыОтправлений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="874027f8-7fcf-4989-97c3-75f30931714e">
+    <name>ДокументЗаполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ заполнен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bed72adf-c85e-401b-b0b2-b20dd0ab9d17">
+    <name>ЗагружатьБезПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать без проверки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c51f5f5a-ad41-4602-8448-a66429c7a51c">
+    <name>СтатусЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус загрузки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатусыЗагрузкиДанныхВОсновноеПриложение</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f3d1bd55-f2f0-498c-b101-9ef37d8b0b13">
+    <name>НомерРеестра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер реестра</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bbefc299-c282-40f6-b33b-affaa917dfc0">
+    <name>РежимПолученияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим получения данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.РежимПолученияОжидаемыхЗаказов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b3294fe2-4737-4a36-b353-47b9fe2408ab">
+    <name>НомерЗабораСЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер забора СЦ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="67baea88-77b9-4e60-a619-cc5bb15ef95f">
+    <name>УдаленнаяПриемка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаленная приемка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="e4d19113-9e76-4ad7-a5d5-434195afcbd5">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f62852a1-7039-4015-b916-6a55e7f3ba8a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="275eb40a-2594-4508-8a9f-f52c0fec117f">
+    <producedTypes>
+      <objectType typeId="3a3e42bf-8c24-4f4a-b047-519c9f6d279f" valueTypeId="0d6cd6ee-61b6-4946-aaa6-a9768032d5fa"/>
+      <rowType typeId="240cc6e9-a3e8-4b76-8443-a7c8174322af" valueTypeId="96985559-48eb-46f4-89f5-e58262babb5d"/>
+    </producedTypes>
+    <name>Штрихкоды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкоды</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="099e30ed-749c-4b84-acbc-9afcab7ce098">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aaad5c90-b2ba-4dd1-b61f-ee147b68da01">
+      <name>Отправление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отправление</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Отправления</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ce25f5ae-e63a-4a0f-b66b-e29eb64592c9">
+      <name>НаличиеПоСтатусу</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наличие по статусу</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bdaa3f76-3cf4-4563-a5c4-df4f2b36302e">
+      <name>КоличествоМест</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество мест</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9f7a6fed-e621-4523-8e0e-d9e97646a9fd">
+      <name>ВНаличии</name>
+      <synonym>
+        <key>ru</key>
+        <value>В наличии</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="98551c44-7809-46c3-a572-20ccb618fdcc">
+      <name>Вычерк</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вычерк</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4b1671c3-d6a8-48f9-b4d3-ad059d34dce5">
+      <name>УдаленнаяПриемка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удаленная приемка</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ca7d72ff-d037-41b5-a849-5453d088d169">
+    <producedTypes>
+      <objectType typeId="a5378fb9-aaa1-47e0-bbb0-258b39755d1c" valueTypeId="848b9599-08a9-4746-bc87-42da695c0792"/>
+      <rowType typeId="d93a4de5-653a-4e36-997d-1a9501e37875" valueTypeId="423f6b28-5822-487a-a764-be0754932917"/>
+    </producedTypes>
+    <name>НенайденныеШтрихкоды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ненайденные штрихкоды</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="157e0fe0-826f-49ed-900f-a492bb00d27c">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1157806c-652e-4f16-9714-1c0abbd64397">
+      <name>КоличествоМест</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество мест</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
